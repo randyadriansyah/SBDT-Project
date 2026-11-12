@@ -1,0 +1,6 @@
+
+[mysqld]
+server-id=2
+relay-log=relay-bin
+read-only=ON
+super-read-only=ON

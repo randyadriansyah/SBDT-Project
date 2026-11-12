@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  primary.cnf: |
+    [mysqld]
+    server-id=1
+    log-bin=mysql-bin
+    binlog-format=ROW
+    binlog-expire-logs-seconds=604800
+
+  replica.cnf: |
+    [mysqld]
+    server-id=2
+    relay-log=relay-bin
+    read-only=ON
+    super-read-only=ON
