@@ -32,3 +32,5 @@ Thumbs.db
 sbdt-user-export.json
 sbdt-client-export.json
 sbdt-realm-export.json
+
+database/init/01-create-replicator.sql
